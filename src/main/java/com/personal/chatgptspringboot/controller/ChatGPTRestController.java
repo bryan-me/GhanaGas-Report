@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/v1")
 public class ChatGPTRestController {
-    private ChatGPTService chatGPTService;
+    private final ChatGPTService chatGPTService;
 
     public ChatGPTRestController(ChatGPTService chatGPTService) {
         this.chatGPTService = chatGPTService;
